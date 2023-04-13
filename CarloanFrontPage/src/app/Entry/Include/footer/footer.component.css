@@ -1,0 +1,11 @@
+/* .container{
+    background-color: rgb(70, 70, 70);
+} */
+img {
+    width: 2cm;
+    height: 2cm;
+    border-radius: 50%;
+  }
+  div{
+    color: rgb(250, 247, 247);
+  }

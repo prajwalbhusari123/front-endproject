@@ -1,0 +1,162 @@
+
+  <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 " >
+    
+            <br>
+                      <h1 class="text-center" style="color: #f3e6f1;" *ngIf="step==1"><b>Register Here !!</b></h1>
+                      <form [formGroup]="productForm" (ngSubmit)="saveDetails()">
+                      <div style="color: #ffff;" *ngIf="step==1">
+    <h2 style="text-align: center;"><b>Applicant Details</b></h2>
+                      <mat-form-field appearance="outline">
+                          <mat-label style="color: #fefcfc;">First Name</mat-label>
+                          <input matInput placeholder="Applicant First Name" formControlName="applicantFname">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">Last Name</mat-label>
+                          <input matInput placeholder="Applicant Last Name" formControlName="applicantLname">
+                        </mat-form-field>
+    
+                        <mat-form-field appearance="outline">
+                          <mat-label style="color: #fefcfc;">Mobile Number</mat-label>
+                          <input matInput placeholder="Applicant Mobile Number" formControlName="applicantMobNumber">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">EmailId</mat-label>
+                          <input matInput placeholder="Applicant Email Id" formControlName="applicantEmailId">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">DOB</mat-label>
+                          <input matInput placeholder=" Applicant DOB" formControlName="applicantDob">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">Occupation</mat-label>
+                          <input matInput placeholder="Applicant Occupation" formControlName="applicantOccupation">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">Adhar Number</mat-label>
+                          <input matInput placeholder="Applicant AdharNo" formControlName="applicantAdharno">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">Pan Number</mat-label>
+                          <input matInput placeholder="Applicant PanNo" formControlName="applicationPanno">
+                        </mat-form-field>
+  
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #fefcfc;">Loan Amount</mat-label>
+                          <input matInput placeholder="Loan Amount" formControlName="applicantLoanAmount">
+                        </mat-form-field>
+    
+                        <mat-form-field appearance="outline">
+                          <mat-label style="color: #fefcfc;">Loan Tenure</mat-label>
+                          <input matInput placeholder="Tenure" formControlName="applicatLoantenure" >
+                        </mat-form-field>
+                      </div>
+                      <div *ngIf="step==2"><br>
+  <h2 style="text-align: center;"><b>Applicant Address</b></h2>
+                       
+                        <div formGroupName="address">
+                          <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">PinCode</mat-label>
+                              <input matInput placeholder="Pin Code" formControlName="pinCode">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Area Name</mat-label>
+                              <input matInput placeholder="Area Name" formControlName="areaName">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">CityName</mat-label>
+                              <input matInput placeholder="CityName" formControlName="cityName">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">StateName</mat-label>
+                              <input matInput placeholder="StateName" formControlName="stateName">
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div *ngIf="step==3">
+   <h2 style="text-align: center;"><b>Vehicle Details</b></h2>
+                       
+                        <div formGroupName="vehicaldetail">
+                          <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Vehicle Chesis Number</mat-label>
+                              <input matInput placeholder="Vehicle Chesis Number" formControlName="vehicleChesisnumber">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Vehicle Type</mat-label>
+                              <input matInput placeholder="Vehicle Type" formControlName="vehicleType">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Vehicle Price</mat-label>
+                              <input matInput placeholder="StateName" formControlName="vehiclePrice">
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div *ngIf="step==4">
+    <h2 style="text-align: center;"><b>Bank Details</b></h2>
+                        <div formGroupName="bankdetails">
+                          <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Bank Name</mat-label>
+                              <input matInput placeholder="bank Name" formControlName="bankName">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;"> Branch Name</mat-label>
+                              <input matInput placeholder="Branch Name" formControlName="bankBranchName">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Account Number</mat-label>
+                              <input matInput placeholder="Account Number" formControlName="bankAccountNumber">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">IFSC Code</mat-label>
+                              <input matInput placeholder="IFSC Code" formControlName="bankIFSCCode">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #fefcfc;">Bank Address</mat-label>
+                              <input matInput placeholder="bank Address" formControlName="bankAddress">
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div *ngIf="step==5">
+      <h2 style="text-align: center;"><b>Documents</b></h2>
+                        <div formGroupName="document">
+                              <label style="color: #fefcfc;">AdharCard:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectAdharCard($event)">
+                              <label style="color: #fefcfc;">Pan Card:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectPanCard($event)"><br>
+                              <label style="color: #fefcfc;">Cancel Check:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectCancelCheck($event)">
+                              <label style="color: #fefcfc;">Passbook:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectPassbook($event)"><br>
+                              <label style="color: #fefcfc;">Signature:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectSignature($event)">
+                              <label style="color: #fefcfc;">Photo:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectPhoto($event)">
+                              <label style="color: #fefcfc;">Quotation:</label>
+                              <input type="file" style="color: #fefcfc;" (change)="onSelectQuotation($event)">
+                        </div>
+                        </div>
+    
+                        <div class="container text-center">
+                          <a class="btn btn-primary mx-2" *ngIf="step !=1" (click)="previous()">Previous</a>
+                          <a class="btn btn-primary mx-2" *ngIf="step !=5"(click)="next()">Next</a>
+                        <button mat-raised-button color="primary" *ngIf="step ==5" >Submit</button>
+                        </div><br>
+                  </form>
+              
+              </div>
+          </div>
+      </div>
+    </div>
+  

@@ -1,0 +1,25 @@
+<p>view-defaulter works!</p>
+<h2 style="margin-left: -83%;color: #ffff;">Installment Details : </h2>
+<table border="2" class="table table-dark">
+  <thead>
+ 
+     <!-- <th>Loan Account Number</th>  -->
+    <th>Applicant Name</th>
+    <th>Total Loan Amount</th>
+    <th>Loan Tenure</th>
+    <th>Monthly Emi</th>
+    <th>Number Of Emi Skip</th>
+    <th>Loan Status</th>
+  </thead>
+    
+  <tbody> <tr *ngFor="let ins of defaulterlist">
+      
+      <!-- <td>{{ins.loanApplicatioNumber}}</td> -->
+      <td>{{ins.ledgerFname}}    {{ins.ledgerLname}}</td>
+       <td>{{ins.totalPaywithInterest}}</td>
+       <td>{{ins.tenure*12}}</td>
+        <td>{{ins.monthlyemi}}</td>
+        <td>{{ins.defaulterCount}}</td>
+        <td>{{ins.loanStatus}}</td>
+        </tr></tbody>
+          </table>

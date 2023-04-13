@@ -1,0 +1,91 @@
+
+<div class="banner">
+       
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+            <h2>EMI Installment Form :</h2>
+            <form  [formGroup]="emiInstallmentForm"  (ngSubmit)="onSubmitForm()">
+              <div class="row">
+                <div class="col">
+                <div class="form-group">
+                  <label >First Name:</label>
+                  <input type="text" class="form-control" formControlName="applicantFirstName" placeholder="Enter your First Name" required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label >Last Name:</label>
+                  <input type="text" class="form-control" formControlName="applicantLastName" placeholder="Enter your Last Name"  required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              </div>
+
+
+                <div class="row">
+                  <div class="col">
+                <div class="form-group">
+                  <label >Loan Account Number:</label>
+                  <input type="number" class="form-control" formControlName="loanAccountNumber" placeholder="Loan Account Number"  required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label >EMI Recived on :</label>
+                  <input type="date" class="form-control" formControlName="emiRecivedDate"  placeholder="Enter your Contact Number" required minlength="7" maxlength="10">
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+                </div>
+                </div>
+                <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label >Next EMI Due on:</label>
+                  <input type="date" class="form-control" formControlName="nextEmiDueDate"  placeholder="Next EMI Due Date" name="pswd" required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+                
+              </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label >Monthly EMI Amount :</label>
+                    <input type="number" class="form-control" formControlName="monthlyEmiAmount"  placeholder="Enter your PAN Card Number" name="pswd" required>
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label >Loan Tenure in Months :</label>
+                      <input type="number" class="form-control" formControlName="loanTenureInYears"  placeholder="Enter your current City" name="pswd" required>
+                      <!-- <div class="valid-feedback">Valid.</div> -->
+                      <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                    </div>
+
+                  </div>
+                  <div class="col">
+                    
+                  </div>
+                </div>
+
+                 <button type="submit" class="btn btn-success" [disabled]="!emiInstallmentForm.valid">Submit</button>&nbsp;&nbsp;
+                <button type="submit" class="btn btn-warning" id="exit" (click)="onClickExit()" >Exit</button>
+                <!-- <input type="submit" class="btn btn-success" value="Submit" [disabled]="!enquiryForm.valid" > -->
+              </form>
+
+        </div>
+        
+    </div>
+</div>

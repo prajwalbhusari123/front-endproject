@@ -1,0 +1,81 @@
+<br>
+<div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 " >
+            <br>
+            <h2 style="text-align: center;"><b>Genrate Sanction Letter</b></h2>
+ <form [formGroup]="genSanLetter" (ngSubmit)="saveSanGenDetails()">
+    
+             <mat-form-field appearance="outline">
+                <mat-label style="color: #101010;">First Name</mat-label>
+                  <input matInput placeholder="Applicant First Name"  formControlName="applicantFname">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Last Name</mat-label>
+                          <input matInput placeholder="Applicant Last Name"  formControlName="applicantLname">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Mobile Number</mat-label>
+                          <input matInput placeholder="Applicant Mobile Number" formControlName="applicantMobNumber">
+                        </mat-form-field>
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Email Id</mat-label>
+                          <input matInput placeholder="Applicant Email Id" formControlName="applicantEmailId">
+                        </mat-form-field>
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">PAN Number</mat-label>
+                          <input matInput placeholder="Applicant PAN Number" formControlName="applicationPanno">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Loan Amount Required</mat-label>
+                          <input matInput placeholder="Required Loan Amount" formControlName="applicantLoanAmount">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Loan Amount Sanctioned</mat-label>
+                          <input matInput placeholder="Loan Amount Sanctioned"  formControlName="loanAmountSanctioned">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Rate of Interest</mat-label>
+                          <input matInput placeholder="Rate of Interest"  formControlName="rateOfInterest">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Loan Tenure</mat-label>
+                          <input matInput placeholder="Loan Tenure"   formControlName="loanTenure">
+                        </mat-form-field>
+  
+                          <a class="btn btn-success" (click)="checkemi()"><h2 style="color: #fefcfc;">calculate emi</h2></a>
+                        
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;"> Monthly EMI Amount</mat-label>
+                          <input matInput placeholder="EMI Amount"  value={{monthlyEmiAmount}} formControlName="monthlyEmiAmount">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;"> Mode of Payment</mat-label>
+                          <input matInput placeholder="Mode of Payment"  formControlName="modeOfPayment">
+                        </mat-form-field>
+
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #101010;">Remark </mat-label>
+                          <input matInput placeholder="Remark"  formControlName="remark">
+                        </mat-form-field>
+
+                        <br>
+                        <button mat-raised-button color="primary">Submit</button>
+   </form>
+              </div>
+          </div>
+      </div>
+    </div> 
+
+
+
+
+  

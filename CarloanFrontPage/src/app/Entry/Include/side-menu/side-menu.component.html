@@ -1,0 +1,9 @@
+
+<h1 style="color: #fff;">{{viewUser}}</h1>
+
+<div *ngFor="let menu of menus[0][usertype]" style="margin-left: 40px;">
+
+<!-- <a [routerLink]="[usertype,menu.key]">  </a> -->
+<button [routerLink]="[usertype,menu.key]" class="btn btn-outline-info">{{menu.label}}</button>
+
+</div>

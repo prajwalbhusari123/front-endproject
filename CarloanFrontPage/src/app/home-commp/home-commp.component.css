@@ -1,0 +1,29 @@
+h1{
+    padding-left: 30px;
+}
+
+.adusttext{
+    position: absolute;
+    top: 200px;
+   text-size-adjust: 100px;
+}
+
+.applybtn{
+    position: absolute;
+    top: 500px;
+    left:100px;
+}
+
+.TCApply{
+    position: absolute;
+    top:505px;
+    left:280px;
+
+}
+
+.emi{
+    position: absolute;
+    top:350px;
+    right: 170px;
+}
+

@@ -1,0 +1,32 @@
+<p>enq-approve works!</p>
+<br>
+<table border="2" class="table table-dark">
+        <thead><th>Enquiry Id</th>
+      <th>Enquiry Name</th>
+      <th>Enquiry MobNo</th>
+      <th>Enquiry EmailId </th>
+      <th>Enquiry LoanAmount</th>
+      <th>Enquiry LoanTenure (Yr)</th>
+      <th>Enquiry Panno</th>
+      <th>Cibil Score</th>
+      <th>Actions</th>
+      <th>Register</th>
+    </thead>
+      
+    <tbody> <tr *ngFor="let n of approvedata">
+        <td>{{n.enquiryId}}</td>
+        <td>{{n.enquiryFname}} {{n.enquiryLname}}</td>
+          <td>{{n.enquiryMobnumber}}</td>
+          <td>{{n.enquiryEmailid}}</td>
+          <td>{{n.enquiryLoanAmount}}</td>
+          <td>{{n.enquiryLoantenure}}year</td>
+          <td>{{n.enquiryPanno}}</td>
+          <td>{{n.enquiryCibilScore}}</td>
+          <td><button style="background-color: rgb(106, 237, 233);color: white;border-radius: 10px;padding: 3px;padding-left: 5px;padding-right: 5px;" (click)="sendapproveEmail(n)">Send Approval Email</button></td>
+        <td> <button style="background-color: rgb(20, 234, 134);color: white;border-radius: 10px;padding: 3px;padding-left: 5px;padding-right: 5px;" (click)="register()">Register</button></td>
+         
+          </tr></tbody>
+            </table>
+
+
+

@@ -1,0 +1,30 @@
+<p>view-santion-application works!</p>
+
+
+<br>
+<table border="2" class="table table-dark">
+    <thead>
+      <!-- <th>Sanction Id</th> -->
+        <th>Sanction Date</th>
+        <th>Loan Application Number</th>
+      <th>Applicant Name</th>
+      <th>Email Id</th>
+      <th>Mobile No</th>
+      <th>Pan No</th>
+      <th>Status</th>
+      <th>Disburse </th>
+     
+    </thead>
+      
+    <tbody> <tr *ngFor="let reg of sanctiondata">
+        <!-- <td>{{reg.sid}}</td> -->
+        <td>{{reg.sanctionDate}}</td>
+        <td>{{reg.loanApplicatioNumber}}</td>
+        <td>{{reg.applicantFname}}    {{reg.applicantLname}}</td>
+        <td>{{reg.applicantEmailId}}</td>
+          <td>{{reg.applicantMobNumber}}</td>
+          <td>{{reg.applicationPanno}}</td>
+          <td>{{reg.status}}</td>
+          <td><button class="btn btn-primary" (click)="LoanDisbure(reg)">Loan Disbursement</button>&nbsp;
+          </tr></tbody>
+            </table>

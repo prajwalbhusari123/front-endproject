@@ -1,0 +1,34 @@
+ <p>viewdatain-pdf works!</p>
+
+ <button (click)="makepdf()">Dowload</button> 
+ <div class="content" #content>
+   
+<br>
+<table border="2" class="table table-dark">
+    <thead><th>Sanction Id</th>
+        <th>Sanction Date</th>
+        <th>Loan Application Number</th>
+      <th>Applicant Name</th>
+      <th>Email Id</th>
+      <th>Mobile No</th>
+      <th>Pan No</th>
+      <th>Status</th>
+      <th>saction letter pdf </th>
+     
+    </thead>
+      
+    <tbody>  <!-- <tbody>   <tr *ngFor="let reg of sanctiondata">  -->
+        <td>{{sanctiondata.sid}}</td>
+        <td>{{sanctiondata.sanctionDate}}</td>
+        <td>{{sanctiondata.loanApplicatioNumber}}</td>
+        <td>{{sanctiondata.applicantFname}}    {{sanctiondata.applicantLname}}</td>
+        <td>{{sanctiondata.applicantEmailId}}</td>
+          <td>{{sanctiondata.applicantMobNumber}}</td>
+          <td>{{sanctiondata.applicationPanno}}</td>
+          <!-- <td>{{sanctiondata.applicantStatus}}</td> -->
+          
+          </tbody>
+       
+          </table>
+        </div>
+        

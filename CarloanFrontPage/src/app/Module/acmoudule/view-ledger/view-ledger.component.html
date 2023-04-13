@@ -1,0 +1,88 @@
+<p>view-ledger works!</p>
+<div class="banner">
+       
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+            <h2>Ledger Details :</h2>
+            <form  [formGroup]="Ledgerimfo" (ngSubmit)="onsubmitledgerform()">
+              <div class="row">
+                <div class="col">
+                <div class="form-group">
+                  <label >First Name:</label>
+                  <input type="text" class="form-control" formControlName="ledgerFname" placeholder="Enter your First Name" required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label >Last Name:</label>
+                  <input type="text" class="form-control" formControlName="ledgerLname" placeholder="Enter your Last Name"  required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              </div>
+
+
+                <div class="row">
+                  <div class="col">
+                <div class="form-group">
+                  <label >Sanction Loan Amount:</label>
+                  <input type="number" class="form-control" formControlName="ledgerLoanAmount" placeholder="Sanction Loan Amount"  required>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                    <label >Total Pay With Interest:</label>
+                    <input type="number" class="form-control" formControlName="totalPaywithInterest"  placeholder="Enter your Contact Number" name="pswd" required>
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                <div class="form-group">
+                  <label >Tenure:</label>
+                  <input type="number" class="form-control" formControlName="tenure"  placeholder="Tenure" required >
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                </div>
+                <!-- <div *ngIf="contactNumber.invalid-feedback && (contactNumber.dirty || contactNumber.touched)" class="alert alert-danger">
+
+
+                </div> -->
+              </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label >monthly  Emi  Amount:</label>
+                    <input type="number" class="form-control" formControlName="monthlyemi"  placeholder="Monthly" required>
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                  </div>
+                </div>
+                </div>
+              
+                  <!-- </div> -->
+                <button type="submit" class="btn btn-success" >Submit</button>&nbsp;&nbsp;
+                <button type="submit" class="btn btn-warning" id="exit" (click)="onClickExit()" >Exit</button>
+        
+                <!-- <input type="submit" class="btn btn-success" value="Submit" [disabled]="!enquiryForm.valid" > -->
+              </form>
+
+        </div>
+        <div class="col-2">
+
+        </div>
+
+
+    </div>
+
+
+</div>

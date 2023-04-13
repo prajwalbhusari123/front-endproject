@@ -1,0 +1,131 @@
+
+<h1 style="text-align: center;">View Applicant Data</h1>
+<br>
+APPLICANT DETAILS:-
+<table border="2" class="table table-dark">
+    <thead><th>Applicant Id</th>
+      <th>Applicant FName</th>
+      <th>Applicant LName</th>
+      <th>Applicant MobileNo.</th>
+      <th>Applicant EmailID</th>
+      <th>Applicant DOB</th>
+    </thead>  
+    <tbody> <tr >
+        <td>{{singleapplicantdata.applicantId}}</td>
+        <td>{{singleapplicantdata.applicantFname}}</td> 
+        <td> {{singleapplicantdata.applicantLname}}</td>
+          <td>{{singleapplicantdata.applicantMobNumber}}</td>
+          <td>{{singleapplicantdata.applicantEmailId}}</td>
+          <td>{{singleapplicantdata.applicantDob}} </td>
+          
+          </tr></tbody>
+            </table>
+
+            <table border="2" class="table table-dark">
+                <thead>
+                  <th>Applicant Occupation</th>
+                  <th>Applicant Adhar Number</th>
+                  <th>Applicant Panno</th>
+                  <th>Applicant Loan Amount</th>
+                </thead>  
+                <tbody> <tr >
+                      <td>{{singleapplicantdata.applicantOccupation}}</td>
+                      <td>{{singleapplicantdata.applicantAdharno}}</td>
+                      <td>{{singleapplicantdata.applicationPanno}}</td>
+                      <td>{{singleapplicantdata.applicantLoanAmount}} </td>
+                      </tr></tbody>
+                        </table>
+
+APPLICANT ADDRESS:-
+                        <table border="2" class="table table-dark">
+                            <thead>
+                              <th>Applicant Area Name</th>
+                              <th>Applicant Pin Name</th>
+                              <th>Applicant City Name</th>
+                              <th>Applicant State</th>
+                              
+                            </thead>  
+                            <tbody> <tr >
+                              
+                                  <td>{{singleapplicantdata.address.areaName}}</td>
+                                  <td>{{singleapplicantdata.address.pinCode}}</td>
+                                  <td>{{singleapplicantdata.address.cityName}}</td>
+                                  <td>{{singleapplicantdata.address.stateName}}</td>
+                                  </tr></tbody>
+                                    </table>
+
+APPLICANT BANK DETAILS:-
+                                    <table border="2" class="table table-dark">
+                                        <thead>
+                                          <th>Bank Name</th>
+                                          <th>Branch Name</th>
+                                          <th>Account Number</th>
+                                          <th>IFSC Code</th>
+                                          <th>Bank Address</th>
+                                          
+                                          
+                                        </thead>  
+                                        <tbody> <tr >
+                                            <td>{{singleapplicantdata.bankdetails.bankName}}</td>
+                                            <td>{{singleapplicantdata.bankdetails.bankBranchName}} </td>
+                                              <td>{{singleapplicantdata.bankdetails.bankAccountNumber}}</td>
+                                              <td>{{singleapplicantdata.bankdetails.bankIFSCCode}}</td>
+                                              <td>{{singleapplicantdata.bankdetails.bankAddress}}</td>
+                                              </tr></tbody>
+                                                </table>
+
+APPLICANT VEHICLE DETAILS:-
+                                                <table border="2" class="table table-dark">
+                                                    <thead>
+                                                      <th>Vehicle Chesis Number</th>
+                                                      <th>Vehicle Type</th>
+                                                      <th>Vehicle Price</th>
+                                                    </thead>  
+                                                    <tbody> <tr >
+                                                        <td>{{singleapplicantdata.vehicaldetail.vehicleChesisnumber}}</td>
+                                                        <td>{{singleapplicantdata.vehicaldetail.vehicleType}} </td>
+                                                          <td>{{singleapplicantdata.vehicaldetail.vehiclePrice}}</td>
+                                                          </tr></tbody>
+                                                            </table>
+
+APPLICANT DOCUMENT DETAILS:-
+                                                            
+                                                <table border="2" class="table table-dark">
+                                                    <thead>
+                                                      <th>Adhar Card</th>
+                                                      <th>Pan Card</th>
+                                                      <th>Cancelled Check</th>
+                                                    </thead>  
+                                                    <tbody> <tr >
+                                                        <td><img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.adharCard" height="300px" width="500px"></td>
+                                                        <td> <img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.panCard" height="300px" width="500px"></td>
+                                                          <td><img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.cancelledCheque" height="300px" width="500px"></td>
+                                                          </tr></tbody>
+                                                            </table>
+            
+
+                                                            <table border="2" class="table table-dark">
+                                                                <thead>
+                                                                  <th>PassBook</th>
+                                                                  <th>Signature</th>
+                                                                  <th>Photo</th>
+                                                                </thead>  
+                                                                <tbody> <tr >
+                                                                    <td><img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.passbook" height="300px" width="500px"></td>
+                                                                    <td> <img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.signature" height="300px" width="500px"></td>
+                                                                      <td><img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.photo" height="300px" width="500px"></td>
+                                                                      </tr></tbody>
+                                                                        </table>
+
+
+                                                                        
+                                                            <table border="2" class="table table-dark">
+                                                                <thead>
+                                                                  <th>Quotation</th>
+
+                                                                </thead>  
+                                                                <tbody> <tr >
+                                                                    <td><img [src]="'data:Image/jpeg;base64,'+singleapplicantdata.document.quotation" height="300px" width="500px"></td>
+                                                                      </tr></tbody>
+                                                                        </table>
+

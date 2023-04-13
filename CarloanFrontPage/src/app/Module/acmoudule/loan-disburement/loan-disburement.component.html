@@ -1,0 +1,104 @@
+<p>loan-disburement works!</p>
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 " >
+            <br>
+                      <form [formGroup]="LoanDisbursement" (ngSubmit)="disburse()">
+                      <div style="color: #000000;" *ngIf="step==1">
+    <h2 style="text-align: center;"><b>Loan Details</b></h2>
+                      <mat-form-field appearance="outline">
+                          <mat-label style="color: #000000;">loanAccountNumber</mat-label>
+                          <input matInput placeholder="loanAccountNumber" formControlName="loanAccountNumber">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #000000;">loanApplicantFname</mat-label>
+                          <input matInput placeholder="loanApplicantFname" formControlName="loanApplicantFname">
+                        </mat-form-field>
+    
+                        <mat-form-field appearance="outline">
+                          <mat-label style="color: #000000;">loanApplicantLname</mat-label>
+                          <input matInput placeholder="loanApplicantLname" formControlName="loanApplicantLname">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #000000;">applicantPanNumber</mat-label>
+                          <input matInput placeholder="applicantPanNumber" formControlName="applicantPanNumber">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #000000;">totalSanctionLoanAmount</mat-label>
+                          <input matInput placeholder="totalSanctionLoanAmount" formControlName="totalSanctionLoanAmount">
+                        </mat-form-field>
+    
+                        <mat-form-field  appearance="outline">
+                          <mat-label style="color: #000000;">TotalDisbursementAmount</mat-label>
+                          <input matInput placeholder="TotalDisbursementAmount" formControlName="totalDisbursementAmount">
+                        </mat-form-field>
+                      </div>
+                      <div *ngIf="step==2"><br>
+  <h2 style="text-align: center;"><b>Car Dealer Details</b></h2>
+                       
+                        <div formGroupName="carDealerDetails">
+
+                          <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerName</mat-label>
+                              <input matInput placeholder="dealerName" formControlName="dealerName">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerAddress</mat-label>
+                              <input matInput placeholder="dealerAddress" formControlName="dealerAddress">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerEmail</mat-label>
+                              <input matInput placeholder="dealerEmail" formControlName="dealerEmail">
+                            </mat-form-field>
+  
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerMobileNumber</mat-label>
+                              <input matInput placeholder="dealerMobileNumber" formControlName="dealerMobileNumber">
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div *ngIf="step==3">
+   <h2 style="text-align: center;"><b>Dealer Account Details</b></h2>
+                       
+                        <div formGroupName="dealerAccountDetails">
+                          <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerAccHolderName</mat-label>
+                              <input matInput placeholder="dealerAccHolderName" formControlName="dealerAccHolderName">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerAccBankName</mat-label>
+                              <input matInput placeholder="dealerAccBankName" formControlName="dealerAccBankName">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                              <mat-label style="color: #000000;">dealerAccountNumber</mat-label>
+                              <input matInput placeholder="dealerAccountNumber" formControlName="dealerAccountNumber">
+                            </mat-form-field>
+                            <mat-form-field  appearance="outline">
+                                <mat-label style="color: #000000;">dealerBranchName</mat-label>
+                                <input matInput placeholder="dealerBranchName" formControlName="dealerBranchName">
+                              </mat-form-field>
+                              <mat-form-field  appearance="outline">
+                                <mat-label style="color: #000000;">dealerBankIFSCCode</mat-label>
+                                <input matInput placeholder="dealerBankIFSCCode" formControlName="dealerBankIFSCCode">
+                              </mat-form-field>
+                        </div>
+                        </div>
+                        <div class="container text-center">
+                          <a class="btn btn-primary mx-2" *ngIf="step !=1" (click)="previous()">Previous</a>
+                          <a class="btn btn-primary mx-2" *ngIf="step !=3"(click)="next()">Next</a>
+                        <button mat-raised-button color="primary" *ngIf="step ==3" >Submit</button>
+                        </div><br>
+                  </form>
+              
+              </div>
+          </div>
+      </div>
+    </div>
+  

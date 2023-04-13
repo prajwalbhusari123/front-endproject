@@ -1,0 +1,26 @@
+<h1>View Register Data</h1>
+<br>
+<table border="2" class="table table-dark">
+    <thead><th>Applicant Id</th>
+      <th>Applicant Name</th>
+      <th>Mobile No</th>
+      <th>Pan No</th>
+      <th>Status</th>
+      <th>All Details</th>
+      <th>Action</th>
+    </thead>
+      
+    <tbody> <tr *ngFor="let reg of registerdData">
+        <td>{{reg.applicantId}}</td>
+        <td>{{reg.applicantFname}}    {{reg.applicantLname}}</td>
+          <td>{{reg.applicantMobNumber}}</td>
+          <td>{{reg.applicationPanno}}</td>
+          <td>{{reg.applicantStatus}}</td>
+          <td><button class="btn btn-success" (click)="opendatainpop(reg)">View Details</button></td>
+          <td><button class="btn btn-primary" (click)="verifyalldata(reg)">verified</button>&nbsp; &nbsp;
+          <button class="btn btn-danger" (click)="reject(reg)">Reject</button></td>
+          </tr></tbody>
+            </table>
+
+
+

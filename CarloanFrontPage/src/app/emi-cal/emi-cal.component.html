@@ -1,0 +1,15 @@
+<div>
+      <div class="calculator">
+        <h1 style="color: blueviolet;"><u><b>Loan EMI Calculator</b></u></h1>
+       <label class="color">Loan Amount</label>
+        <input type="number" [(ngModel)]="loanAmount" /><br />
+        <label class="color">Tenure In Months</label>
+        <input type="number" [(ngModel)]="tenure" /> <br />
+        <label class="color">Interest Rate</label>
+        <input type="number" [(ngModel)]="interest" /><br /><br />
+        <button class="btn btn-success" (click)="calculate()">Calculate</button>
+        <h1 class="color">EMI:{{ emi }}/month</h1>
+        <br><br>
+        <br><br>
+  </div>
+  </div>

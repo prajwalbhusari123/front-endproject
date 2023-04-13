@@ -1,0 +1,28 @@
+<br>
+<table border="2" class="table table-dark">
+        <thead><th>Enquiry Id</th>
+      <th>Enquiry Name</th>
+      <th>Enquiry MobNo</th>
+      <th>Enquiry EmailId </th>
+      <th>Enquiry LoanAmount</th>
+      <th>Enquiry LoanTenure (Yr)</th>
+      <th>Enquiry Panno</th>
+      <th>Cibil</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </thead>
+      
+    <tbody> <tr *ngFor="let n of pr">
+        <td>{{n.enquiryId}}</td>
+        <td>{{n.enquiryFname}} {{n.enquiryLname}}</td>
+          <td>{{n.enquiryMobnumber}}</td>
+          <td>{{n.enquiryEmailid}}</td>
+          <td>{{n.enquiryLoanAmount}}</td>
+          <td>{{n.enquiryLoantenure}}year</td>
+          <td>{{n.enquiryPanno}}</td>
+          <td>{{n.enquiryCibilScore}}</td>
+          <td>{{n.enquiryCibilStatus}}</td>
+          <td><button style="background-color: rgb(8, 231, 23);color: white;border-radius: 10px;padding: 3px;padding-left: 5px;padding-right: 5px;" (click)="checkCIBIL(n)">Check CIBIL(OE)</button>
+          <button style="background-color: rgb(249, 6, 22);color: white;border-radius: 10px;padding: 3px;padding-left: 5px;padding-right: 5px;" (click)="deletEnquiry(n)">Delete</button></td>
+        </tr></tbody>
+            </table>

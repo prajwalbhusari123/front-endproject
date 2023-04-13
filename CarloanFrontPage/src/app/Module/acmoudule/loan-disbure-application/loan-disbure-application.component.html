@@ -1,0 +1,29 @@
+<p>loan-disbure-application works!</p>
+<br>
+<table border="2" class="table table-dark">
+    <thead>
+      <th>Applicant Id</th>
+        <th>Loan Account Number</th>
+      <th>Applicant Name</th>
+      <th>Pan No</th>
+      <th>Total Sanction Amt</th>
+      <th>Total Disburse Amt</th>
+      <th> Remaining Amt</th>
+      <th>Status</th>
+      <th>Show EMI</th>
+    </thead>
+      
+    <tbody> <tr *ngFor="let ld of loanDisbursedata">
+        <td>{{ld.loanId}}</td>
+        <td>{{ld.loanAccountNumber}}</td>
+        <td>{{ld.loanApplicantFname}}    {{ld.loanApplicantLname}}</td>
+          <td>{{ld.applicantPanNumber}}</td>
+          <td>{{ld.totalSanctionLoanAmount}}</td>
+          <td>{{ld.totalDisbursementAmount}}</td>
+          <td>{{ld.remainingDisbursementAmount}}</td>
+          <td>{{ld.loanDisbursementStatus}}</td>
+
+          <!-- <td><button (click)="showemi(ld)">SHOW EMI</button></td> -->
+          <td><button (click)="genrateLedger(ld)">Genrate Ledger</button></td>
+          </tr></tbody>
+            </table>

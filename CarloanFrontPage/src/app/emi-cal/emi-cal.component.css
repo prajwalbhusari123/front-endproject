@@ -1,0 +1,25 @@
+h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+input {
+    padding: 7px;
+    width: 70%;
+    margin-top: 7px;
+}
+.calculator {
+    width: 330px;
+    height: 400px;
+    background-color:rgb(248, 235, 235);
+    position: absolute;
+    left: 72%;
+    top: 120%; 
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px 0px 0px 100px;
+    border-radius: px;
+    color: white;
+}
+
+.color{
+    color: blue;
+}

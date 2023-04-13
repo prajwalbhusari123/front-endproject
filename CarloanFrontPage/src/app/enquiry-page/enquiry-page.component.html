@@ -1,0 +1,61 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                
+                    <div class="container text-center">
+                    <img src="assets\carEmiImage\logo1.png" alt="carimg" class="rounded-circle">
+                    </div>
+
+                 <h1 class="text-center">Apply Here !!</h1>
+
+                    <form [formGroup]="productForm" (ngSubmit)="onProductSubmit()"> 
+                    <mat-form-field  appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input matInput placeholder="Enter Your First Name" formControlName="enquiryFname">
+                      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <mat-form-field  appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Enter Your Last Name" formControlName="enquiryLname">
+                      </mat-form-field>
+
+                      <mat-form-field appearance="outline">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput placeholder="Enter Mobile Number" formControlName="enquiryMobnumber">
+                      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <mat-form-field  appearance="outline">
+                        <mat-label>EmailId</mat-label>
+                        <input matInput placeholder="Enter Your Email Id" formControlName="enquiryEmailid">
+                      </mat-form-field>
+
+                      <mat-form-field  appearance="outline">
+                        <mat-label>Loan Amount</mat-label>
+                        <input matInput placeholder="Loan Amount" formControlName="enquiryLoanAmount">
+                      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <mat-form-field  appearance="outline">
+                        <mat-label>tenures (Year)</mat-label>
+                        <input matInput placeholder="Enter Loan Tenure Period" formControlName="enquiryLoantenure">
+                      </mat-form-field>
+
+                      <mat-form-field  appearance="outline">
+                        <mat-label>Pan Number</mat-label>
+                        <input matInput placeholder="Enter Your Pan Number" formControlName="enquiryPanno">
+                      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <!-- <mat-form-field  appearance="outline">
+                        <mat-label>Enter Your First Name</mat-label>
+                        <input matInput placeholder="Enter Your First Name" formControlName="enquiryId">
+                      </mat-form-field> -->
+
+                      <div class="container text-center">
+                        <button mat-raised-button color="primary">Apply</button>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

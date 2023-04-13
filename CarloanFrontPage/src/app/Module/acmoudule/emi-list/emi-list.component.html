@@ -1,0 +1,28 @@
+<br>
+<table border="2" class="table table-dark">
+    <thead>
+      <!-- <th>Ledger Id</th> -->
+        <th>Loan Account Number</th>
+      <th>Applicant Name</th>
+      <!-- <th>Pan No</th> -->
+      <th>Total Sanction Amt</th>
+      <th>Total Pay (Int)</th>
+      <th>monthlyemi</th>
+      <th>Status</th>
+      <th>Pay EMI</th>
+      <th>EMI Skip</th>
+    </thead>
+      
+    <tbody> <tr *ngFor="let emi of emilist">
+        <!-- <td>{{emi.ledgerNumber}}</td> -->
+        <td>{{emi.loanApplicationNumber}}</td>
+        <td>{{emi.ledgerFname}}    {{emi.ledgerLname}}</td>
+          <!-- <td>{{emi.applicantPanNumber}}</td> -->
+          <td>{{emi.ledgerLoanAmount}}</td>
+          <td>{{emi.totalPaywithInterest}}</td>
+          <td>{{emi.monthlyemi}}</td>
+          <td>{{emi.loanStatus}}</td>
+          <td><button (click)="showemi(emi)">PAY EMI</button></td> 
+          <td><input type="button"(click)="onClickBOunce(emi)" value="EMI Not Paid" ></td>
+          </tr></tbody>
+            </table>

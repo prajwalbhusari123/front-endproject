@@ -1,0 +1,31 @@
+<h2 style="margin-left: -83%;color: #ffff;">Installment Details : </h2>
+<table border="2" class="table table-dark">
+  <thead>
+ 
+    <!-- <th>Loan Account Number</th> -->
+    <th>Applicant Name</th>
+    <th>Instalment Number</th>
+    <th>Remaining EMI</th>
+    <th>Number Of EMI Recived</th>
+    <th>EMI Paid On</th>
+    <th>EMI Due On</th>
+    <th>Monthly EMIs</th>
+    <th>Remaining Amount to be Paid</th>
+    <th>Loan Status</th>
+  </thead>
+    
+  <tbody> <tr *ngFor="let ins of installmentDetails">
+      
+      <!-- <td>{{ins.loanAccountNumber}}</td> -->
+      <td>{{ins.applicantFname}}    {{ins.applicantLname}}</td>
+       <td>{{ins.installments.installmentNumber}}</td>
+       <td>{{ins.installments.numberOfEmiRemaining}}</td>
+        <td>{{ins.installments.numberOfEmiRecived}}</td>
+        <td>{{ins.installments.emiRecivedDate}}</td>
+        <td>{{ins.installments.nextEmiDueDate}}</td>
+        <td>{{ins.installments.monthlyEmiAmount}}</td>
+        <td>{{ins.installments.totalRemaningLoanAmountToBePaid}}</td>
+        <td>{{ins.installments.installmentStatus}}</td>
+        
+        </tr></tbody>
+          </table>

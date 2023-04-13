@@ -1,0 +1,29 @@
+<div class="container">
+    <form  [formGroup]="loginform" (ngSubmit)="submitt()" style="text-align:center">
+      <div class="title">Login Here...! </div>
+      <div class="input-box underline">
+        <input type="text" placeholder="Enter Your Username" formControlName="username" >
+        <div class="underline"></div>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter Your Password" formControlName="password" >
+        <div class="underline"></div>
+      </div>
+      <div class="input-box button">
+        <input type="submit"  [mat-dialog-close]="true" value="Continue" >
+      </div>
+      <!-- <div class="input-box button">
+        <input type="submit"  value="register">
+      </div> -->
+    </form>
+      <div class="option">or Connect With Social Media</div>
+      <div class="twitter">
+        <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+      </div>
+      <div class="facebook">
+        <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+       
+      </div>
+  </div>
+
+
